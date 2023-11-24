@@ -1,0 +1,53 @@
+
+마크업이란
+    -컴퓨터가 기능을 이해할 수 있는 HTML의 문법
+    규칙: <마크업> ~내용물~ </마크업>
+    예외: <br />, <img /> 등
+    속성(부가기능): <마크업 속성명 = "값"> ~내용물~ </마크업>
+
+마크업 종류
+1.<h1>~~<h6>
+    -제목 마크업
+2. <p>
+    - 단락 마크업
+<
+
+
+
+ <audio src="오디오.mp3"> </audio>
+ <video src="동영상.mp4" controls autoplay></video> : 컨트롤러 표시 안됨 [실행버튼 안 보임]
+: 컨트롤러 표시 [controls]
+: 자동실행 [브라우저 정책상 금지] -> JS 이용해서 강제실행
+: 소리없이 자동실행
+
+외부에서 멀티미디어(동영상, 이미지, 지도 등등)을 퍼가기 할 떄 제공해주는 태그
+10. 
+
+
+ readonly
+ placeholder
+ value
+ -초기값 넣어주기
+ placeholder
+ -수정불가[읽기 모드]
+ disabled
+ -사용불가
+ audtofous
+ -포커스 [커서 이동]
+ minlength, malength
+ -값의 최소 길이, 최대 길이
+ multiple
+ -[type=file]일 때 여러개 첨부
+ checked
+ [type=radio]일 때 체크 상태
+ [type=checkbox]일 때 체크 상태
+
+    <textarea>
+    -긴글 텍스트
+    -속성
+        rows = "가로길이"
+        clos = "세로길이"
+    <select>   
+    -목록 상자
+    -하위태그
+        <option> 항목 </option>
