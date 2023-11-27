@@ -1,0 +1,17 @@
+
+.book{
+    width: 400px;
+}
+
+.n{color: rgb(255, 153, 0);
+    font-size: 35px;
+    margin: 5px;
+}
+
+.go{color:rgb(212, 142, 11);}
+.content{border: solid 1px #229fbe;
+        background-color: #229fbe;
+        color: aliceblue;
+        padding: 30px 15px;
+        width: 500px;
+}

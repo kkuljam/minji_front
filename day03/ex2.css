@@ -1,0 +1,35 @@
+ul{border: solid 3px gray;
+    border-radius: 20px;
+    background-color: rgba(221, 218, 218, 0.623);
+    padding: 40px;
+    width: 400;
+}
+
+.title{
+    border-left: 10px solid green;
+    padding-left: 10px;
+
+}
+
+.contli{
+    margin-bottom: 15px;
+}
+
+div{border: solid 3px gray;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 10px 30px;
+    width: 300;
+    padding: 20px 10px 5px 15px;
+}
+
+
+
+.content{border-bottom:dotted 1px black;
+        padding-bottom:25px;
+}
+
+.go{text-align: right;
+    padding-bottom: 20px;
+    padding-right: 15px; 
+}

@@ -1,0 +1,25 @@
+/* 전체 구역 */
+body{
+    border: solid 1px gray;
+    width: 400px;
+    margin: 20px;
+}
+
+/* 이미지 사이즈 */
+.pa{ width: 100;}
+
+h3{
+    border-top:solid 1px gray ;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 10px 10px 10px;
+}
+h4{
+    font-weight: bold;
+    padding: 10px;
+}
+
+p{padding: 10px;
+line-height: 161%;}
+
+.n{color: orange;}
