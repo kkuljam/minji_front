@@ -6,7 +6,7 @@ body{
 }
 
 /* 이미지 사이즈 */
-.pa{ width: 100;}
+.pa{ width: 400px;}
 
 h3{
     border-top:solid 1px gray ;
