@@ -1,0 +1,48 @@
+/* 작업 시작할 때 구역 쉽게 확인하기 위해서. 끝나고 지우면 됨 */
+*{
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 10px;
+} 
+
+#webWrap{
+    width: 900xp; /* 가로 사이즈*/
+    margin: 50px auto; /*박스 가운데 정렬*/
+}
+
+header{background-color: blue;}
+nav{background-color: brown; color: white;}
+main{background-color: orangered;
+    display: flex;
+    flex-wrap: nowrap;
+    /* 부모900px에서 사용 */
+}
+article{
+    width: 600px; /* 부모900px에서 600px사용 */
+}
+aside{
+    width: 300px; /* 부모900px에서 사용 300px*/
+}
+footer{
+    background-color: black; color: white;
+}
+
+
+/* =========================================== */
+
+#header{background-color: blue;}
+#nav{background-color: brown; color: white;}
+#main{background-color: orangered;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#article{
+    width: 600px; /* 부모900px에서 600px사용 */
+}
+#aside{
+    width: 300px; /* 부모900px에서 사용 300px*/
+}
+#footer{
+    background-color: black; color: white;
+}

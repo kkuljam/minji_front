@@ -169,11 +169,14 @@ CSS : 캐스케이딩(상속-부/자) 스타일 시트 ( Cascading Style sheets 
         padding: 10px ;                     전체
         padding: 10px 20px;                 위아래 , 왼쪽오른쪽
         padding: 10px 20px 30px 40px;       시계방향 [ 위 오른쪽 아래쪽 왼쪽 ]
+       
         - 박스모델 가운데정렬
         margin : 0 auto;
+        - 박스모델(inline) 가운데 정렬
+        text-align : center;            -텍스트. img, a 등등
 
     4. box-sizing                   : 안쪽여백과 테두리를 사이즈에 포함여부 
-        box-sizing : content-box    : 포함X
+        box-sizing : content-box    : 포함X [ 기본값 ]
         box-sizing : border-box     : 포함O [ *권장 ]
     5. width                        : 가로 사이즈
     6. height                       : 세로 사이즈
@@ -193,7 +196,32 @@ CSS : 캐스케이딩(상속-부/자) 스타일 시트 ( Cascading Style sheets 
 
         display: none;              : 표시 안함.
 
+        display: flex;              :하위요소들을 배치
+            1. flex-wrap            :하위요소 줄바꿈 여부
+                    nowrap          :(기본값) 하위요소 줄바꿈x
+                    wrap            :하위요소 줄바꿈o
+                    wrap-reverse    :하위요소 줄바꿈o + 반대로
+            
+            2. flex-decoration      :하위요소들을 배치 방향
+                    row             :하위요소들을 가로배치
+                    column          :하위요소들을 세로배치
+                    row-reverse     :하위요소들을 가로배치 + 반대로
+                    column-reverse  :하위요소들을 세로배치 + 반대로
 
+            3. justify-content      :하위요소들을 가로 정렬
+                    flex-start      :(기본값) 왼쪽부터 정렬
+                    flex-end        :오른쪽부터 정렬
+                    cente           :가운데 정렬
+                    space-between   :양쪽 끝에 여백없이 사이 여백 균등 정렬
+                    space-aroun     :양쪽 끝에 여백은 절반으로 하고 사이 여백 균등 정렬
+                    space-evenly    :양쪽 끝에 여백과 사이 여백 균등 정렬
+
+            4. align-items          :하위요소들을 세로 정렬
+                    stretch         :기본값 부모의 높이만큼 자동으로 늘어남
+                    flex-start      :윗변 정렬
+                    flex-end        :밑변 정렬
+                    center          :가운데 정렬
+                    baseline        :내용물 아래 기준으로 정렬
 
 4. css 색상 표현하는 방법 
     1. 색상이름 : red 
