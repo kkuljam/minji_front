@@ -1,0 +1,71 @@
+
+header{width: 1280px;
+    height: 200px;
+    background-image: url(../img/sub_reservation.jpg);
+    background-size: 100%;
+   margin: 0 auto; 
+}
+body{
+    margin: 0 auto;
+    width: 1280px;
+}
+
+#head{
+    color: white; font-weight: bold;
+    text-align: center;
+    padding: 80px;
+}
+
+#mainNav{
+    display: flex;
+   padding: 10pxs;
+    margin: 20px 100px;
+}
+
+article{background-color: #FCF9EA;}
+article div{ 
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+div h3{padding: 10px;}
+table{  
+    background-color: white;
+    border-collapse: collapse;
+    margin: 20px 50px;
+}
+td{
+    border: 1px solid black;
+    width: 100px;
+    height: 80px;
+}
+th{
+    padding: 10px; text-align: center; 
+    border: 1px solid black;
+}
+#top{
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+#red{color: red;}
+
+aside {
+    margin-left: 10px;
+    padding: 10px;
+}
+aside h3{
+    font-weight: bold;
+    border-left: 10px solid gray;
+  
+    padding: 10px;
+}
+
+li{
+    padding: 3px;
+    padding-left: 10px;
+}
+#call{color: green;
+    padding-left: 10px;
+    padding: 3px;
+}
+
