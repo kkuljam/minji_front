@@ -31,6 +31,8 @@ id : 해당 id 속성에 동일한 이름을 갖는 마크업 적용
 
 3. CSS 속성 종류
     1. background-color    : 배경색
+    2. background-imge: url("이미지 경로")      :배경 이미지
+        -background-repeat:                    :
     ====폰트관련===
     2. font-family         :폰트
         -웹폰트[눈누 홈페이지 추천]
@@ -53,6 +55,7 @@ id : 해당 id 속성에 동일한 이름을 갖는 마크업 적용
     10. text-align:        :텍스트 가로 정렬 :right ,left , center
     11. text-decoratio      :텍스트 선긋기 : line-through취소선 underline 밑줄 overline 윗줄 
     12. text-shadow:        :텍스트 그림자 x축, y축 흐림정도 색상
+    13. list-style-type     :목록 사용시 글머리
 
 ==== 박스 모델 관련 =======
 1. border   :테두리
@@ -85,6 +88,10 @@ display: inline :한줄에 포함된 배치
  display: inline-block : 한줄에 포함됙 사이즈가 적용된 배치
  display: none : 표시 안함
 
+8. box-shadow   : 박스모델 그림자
+    x축 y축 흐림정도 색상
+9. overflow     :하위요소가 상위요소[고정사이즈] 보다 커질때
+    visble[기본값], hidden, scroll, auto
 
 4. CSS 색상 표현하는 방법
     1. 색상이름 :readonly

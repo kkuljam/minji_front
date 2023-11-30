@@ -1,0 +1,48 @@
+
+#header{
+    display: flex;
+    background-color: aquamarine;
+    z-index: 3; /*다른 요소와 겹쳤을 때 우선순위*/
+    position: sticky;/*해당 요소가 가려질 때 위치 고정*/
+    top: 0px;
+    margin-top: 50px;
+}
+#header ul li {display:inline-block ;}
+#popup{
+    background-color: red;
+    width: 200px; height: 200px;
+    position: fixed; /*위치 고정*/
+    right: 5px; bottom: 10px;
+    z-index: 4;
+}
+#HTML{background-color: skyblue;
+    padding: 50px;
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+}
+.box{
+    position: relative;
+    left: 300px;
+    width: 100px; height: 70px;
+    background-color: yellow;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.HB2{
+    position:relative;
+    left: 150px; top: 30px;
+}
+.HB3{
+    position: relative;
+    left: 450px; bottom: 40px;
+}
+.HB4{
+    position: relative;
+    left: 150px; top: 40px;
+}
+.HB5{
+    position: relative;
+    left: 450px; bottom: 30px;
+}
