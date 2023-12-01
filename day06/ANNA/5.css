@@ -1,0 +1,66 @@
+content{width: 1260px; justify-content: center;}
+li{list-style-type: none;}
+a{color: #333333; text-decoration: none;}
+input{border: none;}
+select{border: none; width: 80px; height: 30px;}
+*:focus{outline: none;}
+/* ========공통============ */
+ 
+/*게시판 타이틀*/
+#contentA h1{
+    font-size: 18px;
+    color: #555555;
+    font-weight: 400;
+    padding: 100px 0px 30px 0px;
+    text-align: center;
+}
+/*게시판 선택*/
+#contentB{width: 1260px;}
+#contentB ul{    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+#contentB > ul > li {
+    border: 1px solid #dadada;
+    width: 150px;
+    margin: 10px; 
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  
+}
+#contentB > ul > li>a{
+    padding: 15px 5px;
+    font-size: 12px;
+    display: block;
+    position: relative;
+}
+
+/*게시판 검색*/
+#contentC{
+    padding: 50px; width: 1260px;
+}
+#contentC > ul{
+    display: flex;
+    justify-content: flex-end;    
+    
+}
+#contentC > ul> li{
+    border: 1px solid #ccc;
+    margin:3px;
+}
+#contentC > ul> li>img{width: 16px;height: 15px;}
+
+option{color: #555555;}
+
+/*게시판*/
+table{
+    text-align: center; width: 1260px;
+
+}
+tr{border: 1px solid gainsboro; }
+.DL{text-align: left;}
+#sub{background-color: #fff;cursor: pointer;}
+.go{background-color: #fff;cursor: pointer;}
