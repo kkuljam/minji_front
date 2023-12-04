@@ -4,6 +4,7 @@ a{color: #333333; text-decoration: none;}
 input{border: none;}
 select{border: none; width: 80px; height: 30px;}
 *:focus{outline: none;}
+body{text-align: center;}
 /* ========공통============ */
  
 /*게시판 타이틀*/
@@ -13,10 +14,11 @@ select{border: none; width: 80px; height: 30px;}
     font-weight: 400;
     padding: 100px 0px 30px 0px;
     text-align: center;
+    
 }
 /*게시판 선택*/
-#contentB{width: 1260px;}
-#contentB ul{    
+#contentB{width: 1260px; display: inline-block;}
+#contentB > ul{    
     display: flex;
     justify-content: center;
     text-align: center;
@@ -40,12 +42,13 @@ select{border: none; width: 80px; height: 30px;}
 
 /*게시판 검색*/
 #contentC{
-    padding: 50px; width: 1260px;
+    padding: 50px 0px 10px 0px; width: 1260px;
+    
 }
 #contentC > ul{
     display: flex;
     justify-content: flex-end;    
-    
+    width: 1260px;
 }
 #contentC > ul> li{
     border: 1px solid #ccc;
@@ -56,11 +59,52 @@ select{border: none; width: 80px; height: 30px;}
 option{color: #555555;}
 
 /*게시판*/
+#content{display: inline-block;}
+tbody{text-align: center;}
 table{
     text-align: center; width: 1260px;
-
+    font-size: 12.5px;
 }
-tr{border: 1px solid gainsboro; }
-.DL{text-align: left;}
-#sub{background-color: #fff;cursor: pointer;}
-.go{background-color: #fff;cursor: pointer;}
+.num{width: 60px;}
+.zz{width: 50px;}
+.who{width: 90px;}
+th{
+    padding: 10px;
+    border: 0;
+    border-top:1px solid #eaeaea ;
+    color: #999999;
+}
+td{
+    border: 0;
+    border-top:1px solid #eaeaea ;
+    padding: 12px 10px 11px;
+    color: #666666;
+}
+.DL{text-align: left; color: #555555;}
+#sub, .go{background-color: #fff;cursor: pointer; padding-top: 3px; box-shadow: #333333; padding-left: 3px;}
+
+
+#pageForm7{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.pageTyep7{
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    width: 30px; height: 30px;
+    text-align: center;}
+    .pageTyep7:hover{background-color: black; color: white;}
+
+.pageTyepNo7{
+    padding-top: 4px;
+    width: 30px; height: 26px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;}
+    .pageTyepNo7:hover{background-color: black; color: white;}
+#spacebar7{margin: 5px;}

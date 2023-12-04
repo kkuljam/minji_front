@@ -1,0 +1,209 @@
+body{
+    font-family:'Noto Serif KR', serif;
+    font-size: 18px;
+    color: #121212;
+}
+.ffJosefin{
+    font-family: 'Noto Serif KR', serif;
+}
+.innerWrap{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0px;
+}
+main h2{
+    text-align: center; font-size: 60px;
+    letter-spacing: 0.05em;
+    margin-bottom:80px ;
+}
+header{
+    background-image:url(../images/back.jpg) ;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+header .innerWrap{
+    height: 780px; position: relative;
+}
+header h1 {padding-top: 120px;}
+header .scroll{
+    position: absolute; left: 0; bottom: 0;
+    width: 100%; text-align: center; font-size: 16px;
+}
+header .scroll img{margin-top: 8px;}
+
+header nav{
+    position: fixed;
+    top: 0; left: 0; width: 100%;
+    z-index: 100;
+}
+header nav ul{
+    display: flex; justify-content: space-around; 
+    width: 1240px; margin: 0 auto;
+    padding: 10px 20px;
+}
+header nav ul li a:hover{text-decoration: underline;}
+
+.msgSec{
+    background-color: #fbfaf7;
+}
+.msgSec p{text-align: center; line-height: 175%; margin-bottom: 40px;}
+.msgSec p.illust{
+    margin-top: 80px; margin-bottom: 0;
+    position: relative;
+}
+.msgSec p.illust::before{
+    content: url(../images/l.png);
+    position: absolute; left: 320px; bottom: -30px;
+}
+.msgSec p.illust::after{
+    content: url(../images/r.png);
+    position: absolute; right: 320px; bottom: -30px;
+}
+.dateSec{
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+.dateSec .layoutWrap{display: flex;}
+.dateSec .layoutWrap p{flex-basis: 735px;}
+.dateSec .layoutWrap div{width: 465px; padding-top: 100px;}
+.dateSec .dateDetailSec {
+    font-size: 72px; margin: 0 0 170px -100px;
+    background-color: #ffffff; padding: 40px 64px;
+    line-height: 120%;
+}
+.word1{font-size: 50px;}
+.word2{font-size: 40px;}
+.word3{font-size: 60px;}
+
+.accessSec {margin-left: 48px;}
+.accessSec h3{
+    color: #cfafa3;
+    font-size: 55px;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+.accessSec p {line-height: 1.6;}
+
+
+.formSec{
+    background-color: #efe8d9;
+    padding-bottom: 60px;
+}
+form{width: 600px; margin: 0 auto;}
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5p; padding: 4px 8px;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width: 16px; height: 16px;
+    margin-right: 4px;
+    vertical-align: baseline;
+}
+
+.attendradio{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.attendradio label{
+    margin: 0 20px;
+    font-size: 24px;
+}
+.allegyCheck label{
+    margin-right: 24px;
+}
+select{
+    background: #ffffff url(../images/check.png) no-repeat 98% 50%/17px 10px;
+}
+
+/*161  */
+textarea{height: 148px; margin-bottom: 30px;}
+form > p {line-height: 1.4; margin-bottom: 20px;}
+
+.submitBtn{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #121212; color: #ffffff;
+    padding: 18px 80px;
+}
+
+/* 162 */
+
+footer{
+    background-color: #c7887f;
+    color: #f3e9e5;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+
+/* 162 패럴랙스 효과 */
+.dateSec{margin-bottom: 480px;}
+/* 가상요소 선택자 이용한 이미지(배경) 삽입 */
+.dateSec::after{
+    content: "";
+    position: fixed; /*스크롤 움직여도 고정*/
+    left: 0; top: 0; width: 100%; height: 100%; /*화면 가득채우기*/
+    background: url(../images/KakaoTalk_20231204_143556092.jpg) no-repeat center/cover;
+    z-index: -1; /*기본 요소들보다 아래 배치*/
+}
+
+/* 165 트랜지션 애니메이션 효과*/
+input[type="submit"]:hover{
+    background-color: #c7887f;
+    margin-left: 20px;
+    transition-property: background-color,margin-left; /*또는 all*/
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;/*시작천천히 끝빨리*/
+    transition-delay: 0ms;
+}
+
+/* 165 키 프레임 애니매에션 효과 */
+@keyframes scrollAnimation{
+    0%{transform: scaleY(0); transform-origin: top;}/*시작점*/
+    50%{transform: scaleY(1); transform-origin: top;}/*가운데 이전*/
+    50.1%{transform: scaleY(1); transform-origin: bottom;}/*가운데 이후*/
+    100%{transform: scaleY(0); transform-origin: bottom;}/*종료점*/
+}
+/* 169 */
+header .scroll img{
+    animation-name: scrollAnimation;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+/* 
+    p.illust{}      :p 요소의 class명이 illust 이면
+    .illust{}       : 전체요소의 class명이 illust이면z
+    요소[속성명=값]
+*/
+/* 
+    !important > style속성 > id > class > 타입 > *
+        1. p{ text-align: center; !important}
+        2. <div stlye=text-align: center;}
+        3. #id {text-align: center;}
+        4. .class {text-align: center;}
+        5. p{text-align: center;}
+        6. *{text-align: center;}
+    151~152
+        -HTML에 없던 내용물 [주로 텍스트, 이미지]을 CSS에서 넣어주기가 가능한 속성-
+        ::after         : 요소의 앞부분에 내용물 가상으로 넣어주기
+        ::before        : 요소의 뒷부분에 내용물 가상으로 넣어주기
+            content     : 가상 요소의 내용물
+
+    flex-basis: 465px;
+        vs
+    width: 465px;
+        차이점: 1. flex-direction:colums 일때
+                    width :고정     flex-basis : 전체 사이즈 늘어남
+                2. 요소보다 더 큰 컨텐츠가 들어왔을 때
+                     width :고정     flex-basis : 전체 사이즈 늘어남
+*/
