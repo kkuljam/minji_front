@@ -15,7 +15,7 @@ function 회원등록(){//f s
     회원배열.push( name ); // 입력된 값을 배열에 추가 
 
     // 3. [출력]
-    document.querySelector('#nameList').innerHTML = 회원배열;
+    document.querySelector('#nameList').innerHTML = 회원배열; 
     // [ 부가기능1] 등록후 input 상자 초기화 [ input에 value에 빈문자열 넣어주기 ]
     document.querySelector('#nameInput').value ='';
 }// f end
