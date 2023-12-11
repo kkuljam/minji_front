@@ -1,11 +1,12 @@
 // 116 자료형 변환
-    //1. 문자열 입력
+    //1. 문자열 입력  [ prompt() : 입력받은 내용을 반환하는 알람함수. ]
     /*
 const input = prompt('message','_default');
-    //실행순서 
+    //코드 실행 순서 
     //1. prompt('message','_default');  :[실행] 클라이언트에게 입력받는 알람함수
     //2. prompt() 결과/반환/리턴된 값    :[실행 결과]
     //3. const input = 리턴된 값        :[실행 결과 저장]
+
 alert(input);
 
     //2. 불 입력 [confirm(): 확인[true]/취소[false]를 반환하는 알람함수]
@@ -13,7 +14,9 @@ const input2 = confirm('수락하시겠습니까?');
 alert(input2);
 
     //3. 숫자 자료형으로 변환하기 [Number(): 문자열 자료형을 숫자형으로 변환 함수]
-Number("273");
+console.log( Number("273") ) ;
+console.log( Number("a") ) ;     // NaN => not a number // 숫자로 표현할수 없어..
+console.log( Number( true ) );  // true = 1  , false = 0 
 
     //4. 숫자 연산을 사용해 자료형 변환하기 [*단 숫자+"문자열" : 연결연산자 조심]
 console.log ("52"-3);   //49 결과의 자료형이 숫자로 변환
@@ -47,9 +50,9 @@ console.log(!!0);           // 0: false -> ture -> false
     //1.[입력]
 const rawInput = prompt('inch 단위의 숫자를 입력해주세요');
     //2.[처리]
-const cm = rawInput *2.54;
+const cm = rawInput *2.54;  // 연산을 통해서 자동으로 자료형이 반환
     //3.[출력]
-alert(`${rawInput}inch는 ${cm}cm 입니다. `)
+alert(`${rawInput}inch는 ${cm}cm 입니다. `);
 
 
 function 변환기능(){
@@ -64,9 +67,10 @@ function 변환기능(){
     // ---> 처리 ---> java 에게 통신보내기
     // 결과 = input에 입력받은 value 를 h3[마크업 사이에 ] 대입
     document.querySelector('h3').innerHTML = 인치.value
-}
+}   // 함수 종료되면 모두 코드/변수 다 사라짐
+    // 선언 약속/규칙/ 문법 변수 = let, 상수 = const, 함수 = function
     //function 함수명 (매개변수){구현할기능코드}    
-// 선언 약속/규칙/ 문법 변수 = let, 상수 = const, 함수 = function
+
 */
 // 문제 3
 let 센치 = prompt("cm을 입력하세요");
