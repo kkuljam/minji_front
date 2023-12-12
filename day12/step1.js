@@ -102,7 +102,7 @@ const tti ='원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양'.s
             */
 console.log(tti[0]);
 console.log(tti[8]);
-console.log(`${year}년에 태어났다면 ${tti[year%12]} 띠 입니다.`);
+console.log(`${year}년에 태어났다면 ${tti[year%12]}띠 입니다.`);
 
 // const result= (100>200)
 // ? prompt('값을 입력해주세요','')
