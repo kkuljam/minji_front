@@ -1,6 +1,9 @@
 console.log('js 열림');
 
-const 회원배열 = []; //여러 회원이름을 저장하는 배열
+const 회원배열 = []; //여러 회원이름을 저장하는 배열 /  함수밖에 있으니까. js 실행 한번만
+        // - 배열 위에 선언/ 생성한 이유
+            //1. 선언은 1번만 되어야 한다. [왜? 선언이 계속되면 초기화되서 누적 불가능]
+            //2. 여러 {} 에서 호출/ 사용해야 하므로 전역 사용 {}
 
 function 회원등록(){//f s
     console.log('회원등록함수 실행')
@@ -62,8 +65,7 @@ function 회원삭제(){// f s
     console.log('회원삭제 함수')
     //1.입력
     const name = document.querySelector('#nameInput').value;
-    //2. 처리 삭제 처리 -> 배열에서 요소 제거
-        //입력한값이 존재하면 삭제, 없으면 없다고 출력
+    //2. 처리 삭제 처리 -> 배열에서 요소 제거  //입력한값이 존재하면 삭제, 없으면 없다고 출력
     const deleteIndex = 회원배열.indexOf(name);
     if(deleteIndex>=0) {// .indexOf() : 존재하면0 이상의 인덱스위치 반환
         회원배열.splice(deleteIndex,1); alert('삭제 했습니다');
