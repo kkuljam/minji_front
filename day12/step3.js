@@ -42,7 +42,7 @@ function 회원등록(){//f s // 선언
         // [ 유효성검사 = 데이터 검사[필터링]  ]
         // 1. 중복검사
 
-        if( 회원배열.indexOf( name ) >= 0 ){ alert('현재 등록된 이름입니다.[중복]');    return; } // return : 상위 코드로 돌아가기
+        if( 회원배열.indexOf( name ) >= 0 ){ alert('현재 등록된 이름입니다.[중복]');    return; } // return : 함수를 실행했던 위치로 돌아가게 하는 것. 
         //2. 길이 체크
         if( name.length != 3 ){ alert('회원명 3글자로 입력해주세요.'); return; }
         //3.  숫자 검사
