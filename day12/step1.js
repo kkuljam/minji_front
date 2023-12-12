@@ -7,7 +7,7 @@
                 case 조건A : 실행코드; break;
                 case 조건B : 실행코드; break;
                 case 조건C : 실행코드; break;
-                default : btrak;
+                default : btrak; 
             }
 
     145 삼항연산자
