@@ -8,6 +8,7 @@
         2. for(let i in 배열명){ }
 
         3. for(let i of 배열명){ }
+        
         4. while문
             while(조건문){실행문;}
             1. for 처럼 사용 [빈도 적다]

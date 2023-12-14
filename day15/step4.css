@@ -1,0 +1,33 @@
+li{
+    list-style: none; margin-top: 10px;
+    border-bottom:1px solid rgb(212, 210, 210) ;
+    padding-bottom: 5px; font-size: 16px;
+    font-weight: bold;
+}
+input{border: none;}
+
+#wrap{width: 450px; margin: 0 auto;}
+form{display: flex; justify-content: space-between;}
+h1{text-align: center;}
+
+#sline{width: 50px; height: 5px;
+    position: relative; left: 200px; top: -20px;
+    background-color: aqua;
+}
+th{
+    padding: 10px; text-align: center; 
+    width: 150px; height: 10px;
+}
+td{text-align: center; padding: 10px}
+form > input {
+    background-color: aqua; width: 90px; height: 80px;
+    position: relative; top: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px; font-weight: bold;
+}
+table{text-align: center; margin: 0 auto; }
+#total{
+    width: 350px; height: 40px;
+    background-color: aqua;
+}

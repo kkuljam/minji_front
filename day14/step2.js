@@ -184,7 +184,7 @@ function 문제9(){// f s
             for(let t=1; t<=(line9+1)-i; t++){
                 html += `<td>  </td>`;
             }
-            for(let s=1; s<=i*2-2; s++){
+            for(let s=1; s<=(i-1)*2; s++){
                 html += `<td>*</td>`;
             }
             html +=`</tr>`;

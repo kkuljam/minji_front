@@ -6,7 +6,7 @@ a:hover{color: orangered;}
 a:active{color: aqua;}
 a:visited{color: blue;}
 /* 
-    선택자:hover        :해당 선택잘ㄹ 마우스를 올렸을 때
+    선택자:hover        :해당 선택자 마우스를 올렸을 때
     선택자:active
     선택자:visited
 */
