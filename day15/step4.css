@@ -1,18 +1,24 @@
+*{font-size: 17px;}
 li{
     list-style: none; margin-top: 10px;
-    border-bottom:1px solid rgb(212, 210, 210) ;
-    padding-bottom: 5px; font-size: 16px;
+    border-bottom:1px solid rgb(231, 231, 231) ;
+    padding-bottom: 5px;
     font-weight: bold;
 }
 input{border: none;}
 
 #wrap{width: 450px; margin: 0 auto;}
 form{display: flex; justify-content: space-between;}
-h1{text-align: center;}
+h1{
+    text-align: center; 
+    font-size: 30px;
+    letter-spacing: 8px;
+    padding-top:20px ;
+}
 
-#sline{width: 50px; height: 5px;
-    position: relative; left: 200px; top: -20px;
-    background-color: aqua;
+#sline{width: 60px; height: 4px;
+    position: relative; left: 195px; top: -15px;
+    background-color: rgb(79, 226, 177);
 }
 th{
     padding: 10px; text-align: center; 
@@ -20,14 +26,22 @@ th{
 }
 td{text-align: center; padding: 10px}
 form > input {
-    background-color: aqua; width: 90px; height: 80px;
+    background-color:  rgb(79, 226, 177); width: 90px; height: 80px;
     position: relative; top: 40px;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 15px; font-weight: bold;
+    font-size: 17px; font-weight: bold;
 }
 table{text-align: center; margin: 0 auto; }
-#total{
-    width: 350px; height: 40px;
-    background-color: aqua;
+.tT{
+    display: flex; justify-content: center;
+    height: 40px;  margin: 0 auto;
+    background-color:  rgb(79, 226, 177);
+    font-weight: bold; margin-top: 20px;
+    align-items: center; border-radius: 10px;
+}
+td > input {
+    font-weight: bold; border: none;
+    background-color: white;
+    cursor: pointer;
 }

@@ -18,8 +18,8 @@
             <form>
                 <ul>
                     <li>날짜:  <input id="day" type="date"/></li>
-                    <li>항목:  <input id="content" type="text"/></li>
-                    <li>금액:  <input id="pay" type="text"/></li>
+                    <li>항목:  <input id="content" type="text" placeholder="항목"/></li>
+                    <li>금액:  <input id="pay" type="text" placeholder="금액"/></li>
                 </ul>
                 <input onclick="등록함수()" type="button" value="등록"/>
             </form>
@@ -30,7 +30,7 @@
                 <tr>
                     <th>날짜</th>
                     <th>항목</th>
-                    <th>금액</th>
+                    <th>금액</th> 
                     <th>비고</th>
                 </tr>
                 <tbody id="tbody">
@@ -44,7 +44,7 @@
                     
                 </tbody>
             </table>
-            <div id="total"> </div>
+            <div class="tT">총합계 :  <span  id="total"> </span> </div>
             
 
         </div>

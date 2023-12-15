@@ -15,7 +15,9 @@ function 등록함수(){
     항목.push(content)
     금액.push(pay)
 
-    document.querySelector('#content, #day, #pay').value=''; alert('등록 성공')
+    document.querySelector('#day').value='';
+    document.querySelector('#content').value='';
+    document.querySelector('#pay').value=''; alert('등록 성공')
     출력함수()
 }
 //4. 출력 함수
@@ -52,5 +54,5 @@ function 합계(){
     for(let i=0; i<금액.length; i++){
         html += 금액[i]*1
     }
-    document.querySelector('#total').innerHTML=html
+    document.querySelector('#total').innerHTML=`${html}원`
 }
