@@ -346,7 +346,7 @@ JAVA vs JAVAScrtipt는 다르다
             배열.indexof(값);
                 -배열내 동일한 값이 있으면 인덱스번호 반환 없으면 -1
 
--객체란
+-객체 object
 	-실제 존재하는 사물 의미. [실제 존재하는 것]
 	- key와 value 를 한쌍으로 속성 property
 		property	key : value
@@ -362,8 +362,10 @@ JAVA vs JAVAScrtipt는 다르다
 		변수/상수명['속성명']
 	-객체내 속성 추가
 		변수/상수명.새로운속성명 = 값
+		변수/상수명['새로운속성명']= 값
 	-객체내 속성 삭제
 		delete 변수/상수명.삭제할속성명
+		delete 변수/상수명['삭제할속성명']
 
 
 - 지역변수
