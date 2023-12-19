@@ -56,7 +56,9 @@ function 영화출력(선택한지점코드){
     영화출력구역.innerHTML=html;
 }
 
-function 시간출력(선택한지점코드,선택한영화코드){
+function 시간출력(선택한지점코드,선택한영화코드){   
+    console.log(선택한지점코드);
+                            console.log(선택한영화코드);
     //어디에\
     const  시간출력구역 =  document.querySelector('#시간출력구역')
     //무엇을
@@ -64,8 +66,9 @@ function 시간출력(선택한지점코드,선택한영화코드){
         for(let i=0; i<전국.length; i++){
             if(전국[i].지점코드==선택한지점코드){
                 for(let j=0; j<전국[i].영화.length; j++){
-                    if(전국[i].영화[j].영화코드==선택한지점코드){
+                    if(전국[i].영화[j].영화코드==선택한영화코드){
                         for(let t=0; t<전국[i].영화[j].시간테이블.length; t++){
+                         
                             console.log(전국[i].영화[j].시간테이블[t].관)
                             html+=`<span style="margin=10px 0px;">
                                  ${전국[i].영화[j].시간테이블[t].시간} ->
@@ -80,7 +83,7 @@ function 시간출력(선택한지점코드,선택한영화코드){
         
     //출력
     시간출력구역.innerHTML=html;
-    return 0;
+    
 }
 
 
