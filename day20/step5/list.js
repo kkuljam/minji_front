@@ -22,7 +22,7 @@ function 글목록(){
 
 function view(index){
     console.log('view()함수')
-    const list={list:index}
-    localStorage.setItem('viewArray',JSON.stringify(list));
+   
+    localStorage.setItem('viewArray',JSON.stringify(index));
     location.href="view.html" 
 }
