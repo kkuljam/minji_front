@@ -37,6 +37,7 @@ const timeobject = {hour:hour[0], min:hour[1]}
 //3. JSON : 다른 애플리케이션과 통신할 때 데이터 교호나 목적 활용
     //1. JS객체 --> JSON문자열 : JSON.stringify()
     //2. JSON문자열 --> JS 객체 : JSON.parse()
+    // - 함수X
 
 //356 좀 더 알아보기
 //localStorage [JS가 꺼지고/사라져도 사라지지 않는 메모리]

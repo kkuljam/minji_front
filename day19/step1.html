@@ -59,50 +59,52 @@
                 </div>
             </div>
         </div>
+    
+
+        <!-- 
+            카테고리 등록
+            제품 등록
+        -->
+        <div>
+            <h3>관리자 메뉴</h3>
+            <div>
+                <h3>카테고리 등록</h3>
+                <form>
+                    <div >카테고리 번호<input id="cnoNew" type="text"></div>
+                    <div >카테고리<input id="categoryNew" type="text"></div>
+                    <input onclick="등록1()" type="button" value="등록">
+                </form>
+            </div>
+            <div>
+                <h3>제품 등록</h3>
+                <form>
+                    <select>
+                        <option>카테고리번호</option>
+                    </select>
+                    <div>제품번호<input id="pnoNew" type="text"></div>
+                    <div>이름<input id="pnameNew" type="text"></div>
+                    <div>가격<input id="ppriceNew" type="text"></div>
+                    <div>사진<input id="pimgNew" type="text"></div>
+                    <input onclick="등록2()" type="button" value="등록">
+                </form>
+            </div>
+            <div>
+                <h3>결제내역</h3>
+                <table>
+                    <thead>
+                        <th>주문번호</th>
+                        <th>주문날짜</th>
+                        <th>주문상태</th>
+                        <th>제품명</th>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
     </div>
-
-    <!-- 
-        카테고리 등록
-        제품 등록
-    -->
-    <div>
-        <h3>관리자 메뉴</h3>
-        <div>
-            <h3>카테고리 등록</h3>
-            <form>
-                <div >카테고리 번호<input id="cnoNew" type="text"></div>
-                <div >카테고리<input id="categoryNew" type="text"></div>
-                <input onclick="등록1()" type="button" value="등록">
-            </form>
-        </div>
-        <div>
-            <h3>제품 등록</h3>
-            <form>
-                <div>제품번호<input id="pnoNew" type="text"></div>
-                <div>이름<input id="pnameNew" type="text"></div>
-                <div>가격<input id="ppriceNew" type="text"></div>
-                <div>사진<input id="pimgNew" type="text"></div>
-                <div>카테고리번호<input id="cnoNew1" type="text"></div>
-                <input onclick="등록2()" type="button" value="등록">
-            </form>
-        </div>
-        <div>
-            <h3>결제내역</h3>
-            <table>
-                <thead>
-                    <th>주문번호</th>
-                    <th>주문날짜</th>
-                    <th>주문상태</th>
-                    <th>제품명</th>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-
-            </table>
-        </div>
-    </div>
-
 
     <script src='step1.js'></script>
 </body>

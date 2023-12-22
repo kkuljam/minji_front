@@ -157,17 +157,21 @@ function printCart(){
 }
 
 // =====================================관리자 메뉴==================
-
+addcategory()
 function 등록1(){
     const cnoNew=1*document.querySelector('#cnoNew').value;
     const categoryNew=document.querySelector('#categoryNew').value;
 
-    const new1={con:cnoNew, cname:categoryNew};
+    const new1={cno:cnoNew, cname:categoryNew};
+
+    
     
     console.log(new1)
     categoryArray.push(new1)
     console.log(categoryArray)
     printCategory()
+    addcategory()
+    
 }
 
 function 등록2(){
@@ -175,15 +179,18 @@ function 등록2(){
     const pnameNew=document.querySelector('#pnameNew').value;
     const ppriceNew=1*document.querySelector('#ppriceNew').value;
     const pimgNew=document.querySelector('#pimgNew').value;
-    const cnoNew1=1*document.querySelector('#cnoNew1').value;
 
-    const new2={pno:pnoNew, pname:pnameNew, pprice:ppriceNew, pimg:pimgNew, cno:cnoNew1}
+    const new2={pno:pnoNew, pname:pnameNew, pprice:ppriceNew, pimg:pimgNew}
     
+   
+
     console.log(new2)
     productArray.push(new2)
     console.log(productArray)
    printCategory();
 }
+
+
 const 결제Array=[]
 function 결제(결제담기){
     console.log('결제()함수'+결제담기)
@@ -201,4 +208,11 @@ function 결제내역(){
     }
     결제내역창.innerHTML=html;
 }
-
+function addcategory(){
+    const option = document.querySelector('select');
+        let html=''
+        for(let i=0 ;i<categoryArray.length;i++){
+            html+= `<option>${categoryArray[i].cno}:${categoryArray[i].cname}</option>`
+        }
+    option.innerHTML = html;
+}
