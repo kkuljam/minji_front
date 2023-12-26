@@ -224,7 +224,7 @@ function 결제내역(){
                 </tr>`
              }
         }
-    결제내역창.innerHTML=html;
+    결제내역창.innerHTML=html; 
     }
 }
 function addcategory(){// 관리자모드 카테고리 선택 셀렉터
