@@ -86,6 +86,7 @@ function printProduct (selectCno){//함수선언 // 전체출력 X, 내가 선�
     console.log(selectCno);
     //어디에
     const productBox = document.querySelector('#productBox')
+    
     //무엇을
     let html=``;
         //자식요소에서 내가 선택한 카테고리번호와 일치한 번호를 출력
@@ -99,6 +100,7 @@ function printProduct (selectCno){//함수선언 // 전체출력 X, 내가 선�
                             </div>
                         </div>`
             }
+            console.log(productArray)
         }
         
     //출력
@@ -175,40 +177,57 @@ function 등록1(){
 }
 
 function 등록2(){
+    // 받은 값들을 변수에 저장
     const pnoNew=1*document.querySelector('#pnoNew').value;
     const pnameNew=document.querySelector('#pnameNew').value;
     const ppriceNew=1*document.querySelector('#ppriceNew').value;
     const pimgNew=document.querySelector('#pimgNew').value;
-
-    const new2={pno:pnoNew, pname:pnameNew, pprice:ppriceNew, pimg:pimgNew}
+    const pcno=1*document.querySelector('#pcno').value[0] // [0]가 cno번호 자리. 문자열-> 숫자로 바꾸려고 *1
     
-   
+    const new2={pno:pnoNew, pname:pnameNew, pprice:ppriceNew, pimg:pimgNew, cno:pcno}
 
     console.log(new2)
     productArray.push(new2)
     console.log(productArray)
-   printCategory();
+    printProduct();
+    printCategory(pcno); // 등록한 카테고리로 출력.
+   
+   console.log('printProduct()함수')
+   
 }
 
 
 const 결제Array=[]
-function 결제(결제담기){
+function 결제(결제담기){// 주문하기 버튼을 눌렀을 때 실행
     console.log('결제()함수'+결제담기)
-    결제Array.push();   
+    결제Array.push(결제담기);   
+    console.log(결제Array);
+    결제내역();
+    console.log('결제내역()함수');
 }
 
 function 결제내역(){
+    console.log('결제내역()함수');
     const 결제내역창 = document.querySelector('tbody')
     let html=``;
-    for(let i=0; i<결제Array.length;i++){
-        html+=` <tr>${i}</tr> 
-                <tr>12:33</tr> 
-                <tr>주문완료</tr> 
-                <tr>${결제Array[i]}</tr>`
-    }
+    for(let i=cartArray.length-1; i>=0; i--){
+        console.log(cartArray[i]);
+        //해당 i번째 pno제품의 정보찾기
+        for(let j=0; j<productArray.length; j++){
+            console.log(productArray[j])
+            if(cartArray[i]==productArray[j].pno){
+        html+=` <tr>
+                    <th>${i+1}</th> 
+                    <th></th> 
+                    <th>주문완료</th> 
+                    <th>${productArray[j].pname}</th>
+                </tr>`
+             }
+        }
     결제내역창.innerHTML=html;
+    }
 }
-function addcategory(){
+function addcategory(){// 관리자모드 카테고리 선택 셀렉터
     const option = document.querySelector('select');
         let html=''
         for(let i=0 ;i<categoryArray.length;i++){
